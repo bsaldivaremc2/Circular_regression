@@ -1,5 +1,5 @@
 
-# Circular regression for eye detection
+# Circular regression for iris localization
 
 Here I will use a picture of an eye and don't try to detect the circular perimeter as an image but as a data distribution of points. The image will be binarized, go through border detection, then only the lower part of the borders will be kept, like a sonar from below. Afterwards, these reamining points will be sample data, no longer as pixels, but as a pair of coordinates of samples. Next, a semi-circle with the same number of points will be created with a starting center coordiantes and a radius. These variables will be optimized through a regression.  
 tensorflow will be used for the border detection using a Laplacian filter and a convolution of it against the target image.
